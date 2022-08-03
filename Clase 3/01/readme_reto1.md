@@ -137,4 +137,23 @@ echo $input_text
 exit 0
 ```
 
+- Salgo del editor **nano** con: `CTRL+O`, `ENTER` y `CTRL+X`
+
+Luego, para ejecutar el script:
+- Limpio consola
+- Le otorgo todos los permisos al script
+- Ejecuto el script
+- Me aparecerá un `Hola` en la terminal y en el archivo `file1.txt`
+- Y si no le indico nada, el texto `Que me gusta bash!!!!`
+
+```
+clear
+chmod +x scriptEjer3.sh
+./scriptEjer3.sh Hola
+```
+```
+./scriptEjer3.sh 
+```
+
+
 
