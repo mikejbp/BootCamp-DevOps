@@ -140,6 +140,7 @@ exit 0
 - Salgo del editor **nano** con: `CTRL+O`, `ENTER` y `CTRL+X`
 
 Luego, para ejecutar el script:
+
 - Limpio consola
 - Le otorgo todos los permisos al script
 - Ejecuto el script
@@ -151,9 +152,7 @@ clear
 chmod +x scriptEjer3.sh
 ./scriptEjer3.sh Hola
 ```
+
 ```
-./scriptEjer3.sh 
+./scriptEjer3.sh
 ```
-
-
-

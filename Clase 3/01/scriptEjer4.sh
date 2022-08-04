@@ -6,12 +6,12 @@
 # buscar una palabra pasada por parametro
 # e indique la linea de donde se encuentra esta
 
-wget https://es.wikipedia.org/wiki/DevOps
+wget --convert-links --html-extension  https://es.wikipedia.org/wiki/DevOps
 
 read -p "Indique una palabra: " input_word
 echo $input_word
 
-grep --color=always -n -o $input_word DevOps
+grep --color=always -n -o $input_word DevOps.html
 
 exit 0
 

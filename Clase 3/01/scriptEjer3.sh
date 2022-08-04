@@ -19,11 +19,11 @@ cd dummy_1
 file_name=file1.txt
 input_text=$1
 
-echo $input_text >> $file_name
+echo $input_text > $file_name
 
 if [[ -z $input_text  ]]; then
 echo "Que me gusta bash!!!!"
-echo "Que me gusta bash!!!!" >> $file_name
+echo "Que me gusta bash!!!!" > $file_name
 fi
 
 echo $input_text
