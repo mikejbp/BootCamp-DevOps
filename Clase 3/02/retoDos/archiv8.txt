@@ -1,0 +1,10 @@
+# Author: Miguel Briceno
+
+# Comando global para todos los archivos
+chmod a-rwx archiv*
+
+# Primer comando para archiv8.txt
+chmod u=rw,g=r,o=r archiv8txt
+
+# Segundo comando para archiv8.txt
+chmod u-rw,g-r archiv8.txt

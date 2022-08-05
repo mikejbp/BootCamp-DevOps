@@ -1,0 +1,10 @@
+# Author: Miguel Briceno
+
+# Comando global para todos los archivos
+chmod a-rwx archiv*
+
+# Primer comando para archiv2.txt
+chmod u=rw,go= archiv2.txt
+
+# Segundo comando para archiv2.txt
+chmod u-w archiv2.txt
