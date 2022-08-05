@@ -1,4 +1,4 @@
-# Reto 01
+# Reto 01 - Linux
 En este **README** presento los pasos que realicé para solucionar cada uno de los ejercicios de este reto.<br>
 Antes que nada, procedí a realizar una serie de pasos antes de empezar con el ejercicio 1 del reto.
 <hr />
@@ -33,7 +33,7 @@ cd bootcamp-2-challenge/
 ```
 <hr />
 
-## Ejercicio 1:
+## Ejercicio 1 -  Manejo de archivos
 - Posicionarse en la carpeta `01`
 - Crear carpeta carpeta/directorio `foo`
 - Dirigirse a la carpeta `foo`
@@ -54,7 +54,7 @@ echo "Me encanta bash!!" >> file1.txt
 cat file1.txt
 ```
 
-## Ejercicio 2
+## Ejercicio 2 - Manejo de contenido de archivos
 Para éste ejercicio solo fueron solicitadas dos ✌  cosas:
 
 - Pasar el contenido de `file1.txt` al archivo file2.txt (una ☝🏻)
@@ -67,7 +67,7 @@ cd ..
 mv dummy/file2.txt empty/
 ```
 
-## Ejercicio 3
+## Ejercicio 3 - Argumentos del script
 Para este tercer ejercicios, se pidió realizar un Script que automatice los pasos de los ejercicios anteriores. <br>
 Además, utilice el archivo `file1.txt` para agregar contenido por medio de un **parámetro**.
 
@@ -125,14 +125,15 @@ cd dummy_1
 file_name=file1.txt
 input_text=$1
 
-echo $input_text >> $file_name
+echo $input_text > $file_name
 
 if [[ -z $input_text  ]]; then
 echo "Que me gusta bash!!!!"
-echo "Que me gusta bash!!!!" >> $file_name
+echo "Que me gusta bash!!!!" > $file_name
 fi
 
 echo $input_text
+
 
 exit 0
 ```
@@ -144,15 +145,43 @@ Luego, para ejecutar el script:
 - Limpio consola
 - Le otorgo todos los permisos al script
 - Ejecuto el script
-- Me aparecerá un `Hola` en la terminal y en el archivo `file1.txt`
+- Me aparecerá un `bashbashbah` en la terminal y en el archivo `file1.txt`
 - Y si no le indico nada, el texto `Que me gusta bash!!!!`
 
 ```
 clear
 chmod +x scriptEjer3.sh
-./scriptEjer3.sh Hola
+./scriptEjer3.sh bashbashbah
 ```
 
+**Sin parámetros**
 ```
 ./scriptEjer3.sh
+```
+<hr />
+
+## Ejercicio 4 - Opcional
+Se solicitó crear un **script** que descargue el contenido de una pagina web. Luego solicitar una palabra del texto y que busque en el contenido mostrando las líneas donde se encuentran.
+
+- Le indicamos que descargue el contenido de la web con *wget*, el cual creará un arhivo y le decimos que los convierta a una extensión **html**
+- Luego queremos que nos muestre un mensaje en la terminal para introducir una palabra, a la cual se le indica que el valor sea asignado a una variable
+- Imprimimos la variable introducida
+- Con el comando *grep* y sus parámetros le decimos que nos muestre las líneas donde se encuentran estas palabras, nos muestre la palabra únicamente y además de que las coloree para destacarlas 
+
+```
+#!/bin/bash
+#Author: Miguel Briceno
+
+# Script para descargar de un enlace un fichero
+# buscar una palabra pasada por parametro
+# e indique la linea de donde se encuentra esta
+
+wget --convert-links --html-extension  https://es.wikipedia.org/wiki/DevOps
+
+read -p "Indique una palabra: " input_word
+echo $input_word
+
+grep --color=always -n -o $input_word DevOps.html
+
+exit 0
 ```
