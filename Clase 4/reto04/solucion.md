@@ -33,8 +33,18 @@ Usa docker build para crear la imagen llamada ```simple-apache:new```
 
 
 __Resultado:__
+
 <img src="./assets/reto4_2.3.jpg" alt="step2.3" />
+
+<hr />
 
 ### Ejercicio 3 - Inspeccionar la imagen
 
 Averiguar cuántas capas tiene mi nueva imagen
+
+**Respuesta**:
+
+<img src="./assets/reto4_3.png" alt="step3" />
+
+La imagen `simple-apache:new` está constituida de 7 capas.
+
