@@ -24,11 +24,16 @@ Usa docker build para crear la imagen llamada ```simple-apache:new```
 
 ### Ejercicio 2 - Crear contenedor desde la nueva imagen
 
-Ejecutar tu nueva imagen
-El contenedor se debe llamar ```my_apache```
-Debes usar el puerto __5050__ de tu __localhost__ para poder acceder a él.
+- Ejecutar tu nueva imagen
+- El contenedor se debe llamar ```my_apache```
+- Debes usar el puerto __5050__ de tu __localhost__ para poder acceder a él.
+
+<img src="./assets/reto4_2.1.jpg" alt="step2.1" />
+<img src="./assets/reto4_2.2.jpg" alt="step2.2" />
+
+
 __Resultado:__
-![sesion 2, ejercicio 2](../assets/ses2-ejer2.png)
+<img src="./assets/reto4_2.3.jpg" alt="step2.3" />
 
 ### Ejercicio 3 - Inspeccionar la imagen
 
