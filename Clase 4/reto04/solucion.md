@@ -2,19 +2,25 @@
 
 ### Ejercicio 1 - Crear imagen de `Apache`
 
-Crea una imagen con un servidor web Apache y el mismo contenido que en la carpeta [content](https://raw.githubusercontent.com/roxsross/bootcamp-3-challenge/master/retos/sesion2/content).
+Crea una imagen con un servidor web Apache y el mismo contenido que en la carpeta [content](content).
 
-Fíjate en el [Dockerfile](https://raw.githubusercontent.com/roxsross/bootcamp-3-challenge/master/reto4/Dockerfile) de abajo de ```simple-nginx```.
+Usa docker build para crear la imagen llamada ```simple-apache:new``` 
 
-Usa docker build para crear la imagen llamada ```simple-apache:new```
+<img src="./assets/reto4_2.png" alt="step2" />
+<br>
 
 1. Cambiar
-![sesion 2, ejercicio 1](../assets/ses2-ejer1.png)
 2. Buscar en ```Docker Hub``` la imagen de ```Apache```
 3. Cambiar los valores para que:
    1. La imagen base sea este otro servidor
    2. El contenido se copie donde apache sirve los archivos.
+<br>
 
+**Resultado**: <br>
+
+<img src="./assets/reto4_1.png" alt="step1" />
+
+<hr />
 
 ### Ejercicio 2 - Crear contenedor desde la nueva imagen
 
