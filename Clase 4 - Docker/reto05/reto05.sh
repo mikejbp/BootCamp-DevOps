@@ -17,4 +17,4 @@ docker login
 docker tag hello-bootcamp mikejbp/reto05docker:latest
 docker push mikejbp/reto05docker:latest
 
-exit
+exit 
